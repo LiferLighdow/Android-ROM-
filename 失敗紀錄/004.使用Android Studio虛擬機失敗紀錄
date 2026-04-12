@@ -1,0 +1,27 @@
+liferlighdow@Lubuntu:~/android17$ emulator -avd AVD \                                                                                                                       -sysdir out/target/product/generic_x86_64/ \                                                                                                   
+         -system out/target/product/generic_x86_64/system.img \
+         -data out/target/product/generic_x86_64/userdata-qemu.img \
+         -ramdisk out/target/product/generic_x86_64/ramdisk.img \
+         -gpu host
+INFO         | Android emulator version 35.3.8.0 (build_id 12560773) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+ERROR        | Unknown AVD name [AVD], use -list-avds to see valid list.
+ERROR        | HOME is defined but there is no file AVD.ini in $HOME/.android/avd                                                                                           
+ERROR        | (Note: Directories are searched in the order $ANDROID_AVD_HOME, $ANDROID_SDK_HOME/avd and $HOME/.android/avd)                                                
+liferlighdow@Lubuntu:~/android17$ emulator -list-avds                                                                                                                       
+liferlighdow@Lubuntu:~/android17$ export ANDROID_AVD_HOME=$HOME/.config/.android/avd
+liferlighdow@Lubuntu:~/android17$ emulator -list-avds
+AVD
+liferlighdow@Lubuntu:~/android17$ emulator -avd AVD \
+         -sysdir out/target/product/generic_x86_64/ \
+         -system out/target/product/generic_x86_64/system.img \
+         -data out/target/product/generic_x86_64/userdata-qemu.img \
+         -ramdisk out/target/product/generic_x86_64/ramdisk.img \
+         -gpu swiftshader \
+         -wipe-data
+INFO         | Android emulator version 35.3.8.0 (build_id 12560773) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+emulator: INFO: Use user provided system path out/target/product/generic_x86_64/
+ERROR        | can't find SDK installation directory
+Segmentation fault (core dumped)                                                                                                                                            
+liferlighdow@Lubuntu:~/android17$  
