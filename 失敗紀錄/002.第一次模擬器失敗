@@ -187,5 +187,13 @@ WARNING      | QEMU main loop exits abnormally with code 1
 INFO         | Wait for emulator (pid 1620285) 10 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
 
 Killed
+liferlighdow@Lubuntu:~/android17$ emulator -kernel ~/android17/prebuilts/qemu-kernel/x86_64/6.6/kernel-rpc-6.6 \
+         -sysdir ~/android17/out/target/product/generic_x86_64 \
+         -show-kernel
+INFO         | Android emulator version 35.3.8.0 (build_id 12560773) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Changing default hw.initialOrientation to portrait
+
+ERROR        | Invalid or missing kernel image file: /home/liferlighdow/android17/prebuilts/qemu-kernel/x86_64/6.6/kernel-rpc-6.6
 liferlighdow@Lubuntu:~/android17$ 
  
