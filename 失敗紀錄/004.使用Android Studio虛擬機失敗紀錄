@@ -24,4 +24,40 @@ INFO         | Graphics backend: gfxstream
 emulator: INFO: Use user provided system path out/target/product/generic_x86_64/
 ERROR        | can't find SDK installation directory
 Segmentation fault (core dumped)                                                                                                                                            
+liferlighdow@Lubuntu:~/android17$ export ANDROID_SDK_ROOT=$HOME/Android/Sdk                                                                                                 
+liferlighdow@Lubuntu:~/android17$ emulator -avd AVD \
+         -sysdir ~/android17/out/target/product/generic_x86_64/ \
+         -system ~/android17/out/target/product/generic_x86_64/system.img \
+         -data ~/android17/out/target/product/generic_x86_64/userdata-qemu.img \
+         -ramdisk ~/android17/out/target/product/generic_x86_64/ramdisk.img \
+         -gpu swiftshader \
+         -wipe-data
+INFO         | Android emulator version 35.3.8.0 (build_id 12560773) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+emulator: INFO: Use user provided system path /home/liferlighdow/android17/out/target/product/generic_x86_64/
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `AVD` are met.
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `AVD` are passed.
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `AVD` are met.
+WARNING      | Failed to process .ini file /home/liferlighdow/.config/.android/avd/../avd/Medium_Phone.avd/quickbootChoice.ini for reading.
+ERROR        | resizing partition e2fsck failed with exit code 8                                                                                                            
+WARNING      | encryption is off                                                                                                                                            
+WARNING      | FeatureControl is requesting a non existing feature.                                                                                                         
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) ((null):0, (null))                                            
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() ((null):0, (null))
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) ((null):0, (null))
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() ((null):0, (null))
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_sleep_timer_done() ((null):0, (null))
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_unfold_timer_done() ((null):0, (null))
+
+INFO         | Storing crashdata in: /tmp/android-liferlighdow/emu-crash-35.3.8.db, detection is enabled for process: 1633924
+^C
 liferlighdow@Lubuntu:~/android17$  
