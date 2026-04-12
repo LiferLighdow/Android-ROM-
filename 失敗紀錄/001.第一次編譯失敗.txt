@@ -379,5 +379,63 @@ ccache: error: Read-only file system
 
 #### failed to build some targets (02:15 (mm:ss)) ####
 
+liferlighdow@Lubuntu:~/android17$ unset CC_WRAPPER
+unset CCACHE_EXEC
+liferlighdow@Lubuntu:~/android17$ mkdir -p ~/android17/out/.ccache
+liferlighdow@Lubuntu:~/android17$ export USE_CCACHE=1
+export CCACHE_DIR=~/android17/out/.ccache
+liferlighdow@Lubuntu:~/android17$ ccache -M 150G
+Set cache size limit to 150.0 GB
+liferlighdow@Lubuntu:~/android17$ export BUILD_BROKEN_SRC_DIR_IS_WRITABLE=true
+export BUILD_BROKEN_SRC_DIR_RW_ALLOWLIST=$(expand_path ~/.ccache):$(pwd)/out/.ccache
+expand_path: command not found
+liferlighdow@Lubuntu:~/android17$ export BUILD_BROKEN_SRC_DIR_IS_WRITABLE=true
+export BUILD_BROKEN_SRC_DIR_RW_ALLOWLIST=$HOME/android17/out/.ccache
+liferlighdow@Lubuntu:~/android17$ source build/envsetup.sh
+lunch aosp_x86_64-trunk_staging-eng
+
+============================================
+PLATFORM_VERSION_CODENAME=Baklava
+PLATFORM_VERSION=Baklava
+TARGET_PRODUCT=aosp_x86_64
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=x86_64
+TARGET_ARCH_VARIANT=x86_64
+TARGET_2ND_ARCH=x86
+TARGET_2ND_ARCH_VARIANT=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.17.0-20-generic-x86_64-Ubuntu-24.04.4-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=MAIN
+OUT_DIR=out
+SOONG_ONLY=false
+============================================
+liferlighdow@Lubuntu:~/android17$ m -j16
+============================================
+PLATFORM_VERSION_CODENAME=Baklava
+PLATFORM_VERSION=Baklava
+TARGET_PRODUCT=aosp_x86_64
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=x86_64
+TARGET_ARCH_VARIANT=x86_64
+TARGET_2ND_ARCH=x86
+TARGET_2ND_ARCH_VARIANT=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.17.0-20-generic-x86_64-Ubuntu-24.04.4-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=MAIN
+OUT_DIR=out
+SOONG_ONLY=false
+============================================
+[100% 1/1] bootstrap blueprintenvironment variables changed value:
+   CC_WRAPPER ("/usr/bin/ccache" -> "")
+20:04:56 Product source tree has been set as ReadWrite, RW allowlist not necessary.
+                        To recover, either
+                        1. Unset BUILD_BROKEN_SRC_DIR_IS_WRITABLE #or
+                        2. Unset BUILD_BROKEN_SRC_DIR_RW_ALLOWLIST
+
+#### failed to build some targets (2 seconds) ####
+
 liferlighdow@Lubuntu:~/android17$ 
+
  
