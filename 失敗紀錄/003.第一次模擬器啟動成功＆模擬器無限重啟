@@ -591,4 +591,143 @@ ssion: deflate
 ERROR        | bad workspace: cannot find prebuilt kernel in: /home/liferlighdow/android17/prebuilts/qemu-kernel/x86_64/kernel-qemu
 INFO         | Saving with gfxstream=1                                                                                                                                      
 ERROR        | stop: Not implemented
-liferlighdow@Lubuntu:~/android17$  
+liferlighdow@Lubuntu:~/android17$ emulator -gpu swiftshader \                                                                                                               
+         -sysdir out/target/product/generic_x86_64/ \
+         -system out/target/product/generic_x86_64/system.img \
+         -data out/target/product/generic_x86_64/userdata-qemu.img \
+         -ramdisk out/target/product/generic_x86_64/ramdisk.img \
+         -wipe-data
+INFO         | Android emulator version 35.3.8.0 (build_id 12560773) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Changing default hw.initialOrientation to portrait
+
+INFO         | Increasing RAM size to 2048MB
+INFO         | Checking system compatibility:
+INFO         |   Checking: hasSufficientDiskSpace
+INFO         |      Ok: Disk space requirements to run avd: `<build>` are met.
+INFO         |   Checking: hasSufficientHwGpu
+INFO         |      Ok: Hardware GPU requirements to run avd: `<build>` are passed.
+INFO         |   Checking: hasSufficientSystem
+INFO         |      Ok: System requirements to run avd: `<build>` are met.
+ERROR        | resizing partition e2fsck failed with exit code 8
+WARNING      | encryption is off                                                                                                                                            
+WARNING      | FeatureControl is requesting a non existing feature.                                                                                                         
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_posture_requested(int) ((null):0, (null))                                            
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_posture_selection_dialog() ((null):0, (null))
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_new_resizable_requested(PresetEmulatorSizeType) ((null):0, (null))
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_dismiss_resizable_dialog() ((null):0, (null))
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_sleep_timer_done() ((null):0, (null))
+
+INFO         | Warning: QMetaObject::connectSlotsByName: No matching signal for on_unfold_timer_done() ((null):0, (null))
+
+INFO         | Storing crashdata in: /tmp/android-liferlighdow/emu-crash-35.3.8.db, detection is enabled for process: 1626993
+WARNING      | FeatureControl is requesting a non existing feature.
+WARNING      | FeatureControl is requesting a non existing feature.                                                                                                         
+WARNING      | FeatureControl is requesting a non existing feature.                                                                                                         
+WARNING      | FeatureControl is requesting a non existing feature.                                                                                                         
+WARNING      | FeatureControl is requesting a non existing feature.                                                                                                         
+library_mode swiftshader_indirect gpu mode swiftshader_indirect                                                                                                             
+WARNING      | FeatureControl is requesting a non existing feature.
+INFO         | Initializing hardware OpenGLES emulation support                                                                                                             
+I0413 04:40:21.109717 1626993 opengles.cpp:285] android_startOpenglesRenderer: gpu info
+I0413 04:40:21.109739 1626993 opengles.cpp:286] 
+INFO         | Raised nofile soft limit to 4096.
+INFO         | HealthMonitor disabled.
+INFO         | initIcdPaths: ICD set to 'swiftshader', using Swiftshader ICD
+INFO         | Setting ICD filenames for the loader = /home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/vk_swiftshader_icd.json:/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/lib64/vulkan/vk_swiftshader_icd.json
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so]
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so] (posix): begin
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so] (posix,linux): call dlopen on [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so]
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so] failed (posix). dlerror: []
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so.1]
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so.1]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so.1] (posix): begin
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so.1] (posix,linux): call dlopen on [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so.1]
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/qemu/linux-x86_64/lib64/vulkan/libvulkan.so.1] failed (posix). dlerror: []
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/lib64/vulkan/libvulkan.so]
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/lib64/vulkan/libvulkan.so]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/lib64/vulkan/libvulkan.so] (posix): begin
+
+INFO         | SharedLibrary::open for [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/lib64/vulkan/libvulkan.so] (posix,linux): call dlopen on [/home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/lib64/vulkan/libvulkan.so]
+
+INFO         | Added library: /home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/lib64/vulkan/libvulkan.so
+INFO         | Selecting Vulkan device: SwiftShader Device (Subzero), Version: 1.3.0
+initialize: Supports id properties, got a vulkan device UUID
+INFO         | SharedLibrary::open for [libGLESv2.so]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libGLESv2.so] (posix): begin
+
+INFO         | SharedLibrary::open for [libGLESv2.so] (posix,linux): call dlopen on [libGLESv2.so]
+
+INFO         | SharedLibrary::open for [libEGL.so]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libEGL.so] (posix): begin
+
+INFO         | SharedLibrary::open for [libEGL.so] (posix,linux): call dlopen on [libEGL.so]
+
+INFO         | SharedLibrary::open for [libX11]
+
+INFO         | SharedLibrary::open for [libX11]: not found in map, open for the first time
+
+INFO         | SharedLibrary::open for [libX11] (posix): begin
+
+INFO         | SharedLibrary::open for [libX11] (posix,linux): call dlopen on [libX11.so]
+
+INFO         | Initializing VkEmulation features:
+INFO         |     glInteropSupported: false
+INFO         |     useDeferredCommands: true
+INFO         |     createResourceWithRequirements: true
+INFO         |     useVulkanComposition: false
+INFO         |     useVulkanNativeSwapchain: false
+INFO         |     enable guestRenderDoc: false
+INFO         |     ASTC LDR emulation mode: 2
+INFO         |     enable ETC2 emulation: true
+INFO         |     enable Ycbcr emulation: false
+INFO         |     guestVulkanOnly: false
+INFO         |     useDedicatedAllocations: false
+INFO         | Graphics Adapter Vendor Google (Google Inc.)
+INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+INFO         | Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+INFO         | Graphics Device Extensions N/A
+INFO         | Verified boot params were not found.
+INFO         | Monitoring duration of emulator setup.
+WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+INFO         | Using security allow list from: /home/liferlighdow/android17/prebuilts/android-emulator/linux-x86_64/lib/emulator_access.json                                
+WARNING      | *** Basic token auth should only be used by android-studio ***
+INFO         | The active JSON Web Key Sets can be found here: /run/user/1000/avd/running/1626993/jwks/09b17b11-0146-45c6-bdb6-3d8cbe82808b/active.jwk                      
+INFO         | Scanning /run/user/1000/avd/running/1626993/jwks/09b17b11-0146-45c6-bdb6-3d8cbe82808b for jwk keys.
+INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+INFO         | Advertising in: /run/user/1000/avd/running/pid_1626993.ini
+INFO         | Setting display: 0 configuration to: 320x480, dpi: 160x160 
+INFO         | setDisplayActiveConfig 0
+INFO         | Loading snapshot 'default_boot'...
+WARNING      | Device 'cache' does not have the requested snapshot 'default_boot'
+                                                                                                                                                                            
+WARNING      | Failed to load snapshot 'default_boot'                                                                                                                       
+USER_WARNING | The saved emulator state could not be loaded, performing a cold boot.                                                                                        
+^CINFO         | Wait for emulator (pid 1626993) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+INFO         | Wait for emulator (pid 1626993) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+ERROR        | bad workspace: cannot find prebuilt kernel in: /home/liferlighdow/android17/prebuilts/qemu-kernel/x86_64/kernel-qemu
+INFO         | Saving with gfxstream=1                                                                                                                                      
+ERROR        | stop: Not implemented
+liferlighdow@Lubuntu:~/android17$   
