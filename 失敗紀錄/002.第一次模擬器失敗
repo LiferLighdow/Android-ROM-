@@ -1,0 +1,12 @@
+liferlighdow@Lubuntu:~/Downloads$ emulator &
+[1] 1617808
+liferlighdow@Lubuntu:~/Downloads$ INFO    | Storing crashdata in: /tmp/android-liferlighdow/emu-crash-34.1.19.db, detection is enabled for process: 1617808
+INFO    | Android emulator version 34.1.19.0 (build_id 11525734) (CL:N/A)
+ERROR   | No AVD specified. Use '@foo' or '-avd foo' to launch a virtual device named 'foo'
+^C
+[1]+  Exit 1                  emulator
+liferlighdow@Lubuntu:~/Downloads$ emulator
+INFO    | Storing crashdata in: /tmp/android-liferlighdow/emu-crash-34.1.19.db, detection is enabled for process: 1617954
+INFO    | Android emulator version 34.1.19.0 (build_id 11525734) (CL:N/A)
+ERROR   | No AVD specified. Use '@foo' or '-avd foo' to launch a virtual device named 'foo'
+liferlighdow@Lubuntu:~/Downloads$ 
