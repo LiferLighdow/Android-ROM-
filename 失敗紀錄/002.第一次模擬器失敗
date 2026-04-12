@@ -414,5 +414,30 @@ build.avd              dexpreopt_config       installed-files-ramdisk.json  modu
 build_fingerprint.txt  emu-launch-params.txt  installed-files-ramdisk.txt   module-info.json.rsp  ramdisk.img                       vendor
 build_thumbprint.txt   fake_packages          installed-files-root.json     multiinstance.lock    root
 cache.img              fastboot-info.txt      installed-files-root.txt      obj                   snapshots
-liferlighdow@Lubuntu:~/android17/out/target/product/generic_x86_64$ 
+liferlighdow@Lubuntu:~/android17/out/target/product/generic_x86_64$ cd ~/android17/
+liferlighdow@Lubuntu:~/android17$ m -j16
+============================================
+PLATFORM_VERSION_CODENAME=Baklava
+PLATFORM_VERSION=Baklava
+TARGET_PRODUCT=aosp_x86_64
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=x86_64
+TARGET_ARCH_VARIANT=x86_64
+TARGET_2ND_ARCH=x86
+TARGET_2ND_ARCH_VARIANT=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.17.0-20-generic-x86_64-Ubuntu-24.04.4-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=MAIN
+OUT_DIR=out
+SOONG_ONLY=false
+============================================
+[100% 2/2 0s remaining] Target vbmeta image: out/target/product/generic_x86_64/vbmeta.img
+
+#### build completed successfully (10 seconds) ####
+
+liferlighdow@Lubuntu:~/android17$ ls -l out/target/product/generic_x86_64/userdata.img
+ls: cannot access 'out/target/product/generic_x86_64/userdata.img': No such file or directory
+liferlighdow@Lubuntu:~/android17$ 
+
 
