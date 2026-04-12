@@ -188,4 +188,32 @@ ccache: error: Read-only file system
 
 #### failed to build some targets (9 seconds) ####
 
-liferlighdow@Lubuntu:~/android17$
+liferlighdow@Lubuntu:~/android17$ export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
+liferlighdow@Lubuntu:~/android17$ rm -rf out/soong/.intermediates/external/icu/
+liferlighdow@Lubuntu:~/android17$ source build/envsetup.sh
+lunch aosp_x86_64-trunk_staging-eng
+
+============================================
+PLATFORM_VERSION_CODENAME=Baklava
+PLATFORM_VERSION=Baklava
+TARGET_PRODUCT=aosp_x86_64
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=x86_64
+TARGET_ARCH_VARIANT=x86_64
+TARGET_2ND_ARCH=x86
+TARGET_2ND_ARCH_VARIANT=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.17.0-20-generic-x86_64-Ubuntu-24.04.4-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=MAIN
+OUT_DIR=out
+SOONG_ONLY=false
+============================================
+liferlighdow@Lubuntu:~/android17$ export CC_WRAPPER=ccache
+export BUILD_BROKEN_SRC_DIR_IS_WRITABLE=true
+liferlighdow@Lubuntu:~/android17$ m -j16
+19:41:22 TEMPORARY_DISABLE_PATH_RESTRICTIONS was a temporary migration method, and is now obsolete.
+
+#### failed to build some targets (1 seconds) ####
+
+liferlighdow@Lubuntu:~/android17$ 
