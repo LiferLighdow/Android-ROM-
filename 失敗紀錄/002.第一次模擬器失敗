@@ -438,6 +438,7 @@ SOONG_ONLY=false
 
 liferlighdow@Lubuntu:~/android17$ ls -l out/target/product/generic_x86_64/userdata.img
 ls: cannot access 'out/target/product/generic_x86_64/userdata.img': No such file or directory
-liferlighdow@Lubuntu:~/android17$ 
-
+liferlighdow@Lubuntu:~/android17$ cd ~/android17/out/target/product/generic_x86_64/
+liferlighdow@Lubuntu:~/android17/out/target/product/generic_x86_64/$ truncate -s 512M userdata.img && cp userdata.img userdata-qemu.img
+liferlighdow@Lubuntu:~/android17/out/target/product/generic_x86_64/$ cd ~/android17
 
