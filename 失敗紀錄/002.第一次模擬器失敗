@@ -339,6 +339,80 @@ WARNING      | QEMU main loop exits abnormally with code 1
 INFO         | Wait for emulator (pid 1621309) 10 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
 
 Killed
-liferlighdow@Lubuntu:~/android17$ 
- 
- 
+liferlighdow@Lubuntu:~/android17$ source build/envsetup.sh
+lunch aosp_x86_64-trunk_staging-eng
+
+============================================
+PLATFORM_VERSION_CODENAME=Baklava
+PLATFORM_VERSION=Baklava
+TARGET_PRODUCT=aosp_x86_64
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=x86_64
+TARGET_ARCH_VARIANT=x86_64
+TARGET_2ND_ARCH=x86
+TARGET_2ND_ARCH_VARIANT=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.17.0-20-generic-x86_64-Ubuntu-24.04.4-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=MAIN
+OUT_DIR=out
+SOONG_ONLY=false
+============================================
+liferlighdow@Lubuntu:~/android17$ m emu_img_zip
+============================================
+PLATFORM_VERSION_CODENAME=Baklava
+PLATFORM_VERSION=Baklava
+TARGET_PRODUCT=aosp_x86_64
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=x86_64
+TARGET_ARCH_VARIANT=x86_64
+TARGET_2ND_ARCH=x86
+TARGET_2ND_ARCH_VARIANT=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.17.0-20-generic-x86_64-Ubuntu-24.04.4-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=MAIN
+OUT_DIR=out
+SOONG_ONLY=false
+============================================
+FAILED: ninja: unknown target 'emu_img_zip'
+04:27:57 ninja failed with: exit status 1
+
+#### failed to build some targets (7 seconds) ####
+
+liferlighdow@Lubuntu:~/android17$ m snod
+============================================
+PLATFORM_VERSION_CODENAME=Baklava
+PLATFORM_VERSION=Baklava
+TARGET_PRODUCT=aosp_x86_64
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=x86_64
+TARGET_ARCH_VARIANT=x86_64
+TARGET_2ND_ARCH=x86
+TARGET_2ND_ARCH_VARIANT=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.17.0-20-generic-x86_64-Ubuntu-24.04.4-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=MAIN
+OUT_DIR=out
+SOONG_ONLY=false
+============================================
+[100% 2/2] make snod: ignoring dependencies
+build/make/core/Makefile:3634: Warning: with dexpreopt enabled, you may need a full rebuild.
+Target system fs image: out/target/product/generic_x86_64/system.img
+
+#### build completed successfully (34 seconds) ####
+
+liferlighdow@Lubuntu:~/android17$ ls -l out/target/product/generic_x86_64/userdata.img
+ls: cannot access 'out/target/product/generic_x86_64/userdata.img': No such file or directory
+liferlighdow@Lubuntu:~/android17$ cd out/target/product/generic_x86_64/
+liferlighdow@Lubuntu:~/android17/out/target/product/generic_x86_64$ ls
+all_modules.txt        cache.img.qcow2        hardware-qemu.ini             installed-files.txt   obj_x86                           symbols
+android-info.txt       clean_steps.mk         hardware-qemu.ini.lock        kernel-ranchu         previous_build_config.mk          system
+apex                   debug_ramdisk          installed-files.json          misc_info.txt         previous_use_partial_compile.txt  system.img
+build.avd              dexpreopt_config       installed-files-ramdisk.json  module-info.json      ramdisk                           vbmeta.img
+build_fingerprint.txt  emu-launch-params.txt  installed-files-ramdisk.txt   module-info.json.rsp  ramdisk.img                       vendor
+build_thumbprint.txt   fake_packages          installed-files-root.json     multiinstance.lock    root
+cache.img              fastboot-info.txt      installed-files-root.txt      obj                   snapshots
+liferlighdow@Lubuntu:~/android17/out/target/product/generic_x86_64$ 
+
