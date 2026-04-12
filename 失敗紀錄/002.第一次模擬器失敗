@@ -33,4 +33,18 @@ INFO         | Changing default hw.initialOrientation to portrait
 ERROR        | bad workspace: cannot find prebuilt ranchu kernel in: /home/liferlighdow/android17/prebuilts/qemu-kernel/x86_64/ranchu/kernel-qemu
 ERROR        | This AVD's configuration is missing a kernel file! Please ensure the file "kernel-ranchu" is in the same location as your system image.                      
 ERROR        | ANDROID_SDK_ROOT is undefined                                                                                                                                
+liferlighdow@Lubuntu:~/android17$ emulator -kernel out/target/product/generic_x86_64/kernel
+INFO         | Android emulator version 35.3.8.0 (build_id 12560773) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Changing default hw.initialOrientation to portrait
+
+ERROR        | Invalid or missing kernel image file: out/target/product/generic_x86_64/kernel
+liferlighdow@Lubuntu:~/android17$ emulator -show-kernel -no-snapshot-load -gpu host                                                                                         
+INFO         | Android emulator version 35.3.8.0 (build_id 12560773) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Changing default hw.initialOrientation to portrait
+
+ERROR        | bad workspace: cannot find prebuilt ranchu kernel in: /home/liferlighdow/android17/prebuilts/qemu-kernel/x86_64/ranchu/kernel-qemu
+ERROR        | This AVD's configuration is missing a kernel file! Please ensure the file "kernel-ranchu" is in the same location as your system image.                      
+ERROR        | ANDROID_SDK_ROOT is defined (/home/liferlighdow/android17/out/host/linux-x86) but cannot find kernel file in /home/liferlighdow/android17/out/host/linux-x86/system-images/ sub directories                                                                                                                                              
 liferlighdow@Lubuntu:~/android17$  
