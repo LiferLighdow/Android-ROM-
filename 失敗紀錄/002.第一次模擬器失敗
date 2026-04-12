@@ -1,12 +1,36 @@
-liferlighdow@Lubuntu:~/Downloads$ emulator &
-[1] 1617808
-liferlighdow@Lubuntu:~/Downloads$ INFO    | Storing crashdata in: /tmp/android-liferlighdow/emu-crash-34.1.19.db, detection is enabled for process: 1617808
-INFO    | Android emulator version 34.1.19.0 (build_id 11525734) (CL:N/A)
-ERROR   | No AVD specified. Use '@foo' or '-avd foo' to launch a virtual device named 'foo'
-^C
-[1]+  Exit 1                  emulator
-liferlighdow@Lubuntu:~/Downloads$ emulator
-INFO    | Storing crashdata in: /tmp/android-liferlighdow/emu-crash-34.1.19.db, detection is enabled for process: 1617954
-INFO    | Android emulator version 34.1.19.0 (build_id 11525734) (CL:N/A)
-ERROR   | No AVD specified. Use '@foo' or '-avd foo' to launch a virtual device named 'foo'
-liferlighdow@Lubuntu:~/Downloads$ 
+liferlighdow@Lubuntu:~/android17$ emulator
+INFO         | Android emulator version 35.3.8.0 (build_id 12560773) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Changing default hw.initialOrientation to portrait
+
+ERROR        | bad workspace: cannot find prebuilt ranchu kernel in: /home/liferlighdow/android17/prebuilts/qemu-kernel/x86_64/ranchu/kernel-qemu
+ERROR        | This AVD's configuration is missing a kernel file! Please ensure the file "kernel-ranchu" is in the same location as your system image.
+ERROR        | ANDROID_SDK_ROOT is undefined
+liferlighdow@Lubuntu:~/android17$ source build/envsetup.sh                                                                                                                  
+liferlighdow@Lubuntu:~/android17$ lunch aosp_x86_64-trunk_staging-eng
+
+============================================
+PLATFORM_VERSION_CODENAME=Baklava
+PLATFORM_VERSION=Baklava
+TARGET_PRODUCT=aosp_x86_64
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=x86_64
+TARGET_ARCH_VARIANT=x86_64
+TARGET_2ND_ARCH=x86
+TARGET_2ND_ARCH_VARIANT=x86_64
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.17.0-20-generic-x86_64-Ubuntu-24.04.4-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=MAIN
+OUT_DIR=out
+SOONG_ONLY=false
+============================================
+liferlighdow@Lubuntu:~/android17$ emulator
+INFO         | Android emulator version 35.3.8.0 (build_id 12560773) (CL:N/A)
+INFO         | Graphics backend: gfxstream
+INFO         | Changing default hw.initialOrientation to portrait
+
+ERROR        | bad workspace: cannot find prebuilt ranchu kernel in: /home/liferlighdow/android17/prebuilts/qemu-kernel/x86_64/ranchu/kernel-qemu
+ERROR        | This AVD's configuration is missing a kernel file! Please ensure the file "kernel-ranchu" is in the same location as your system image.                      
+ERROR        | ANDROID_SDK_ROOT is undefined                                                                                                                                
+liferlighdow@Lubuntu:~/android17$  
