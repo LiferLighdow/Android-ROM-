@@ -39,4 +39,41 @@ liferlighdow@Lubuntu:~/android17$ m systemimage -j8
 
 #### build completed successfully (02:37:29 (hh:mm:ss)) ####
 
+liferlighdow@Lubuntu:~/android17$ m vbmetaimage -j16
+============================================
+PLATFORM_VERSION_CODENAME=Baklava
+PLATFORM_VERSION=Baklava
+TARGET_PRODUCT=aosp_arm64
+TARGET_BUILD_VARIANT=userdebug
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv8-a
+TARGET_2ND_CPU_VARIANT=generic
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-6.17.0-22-generic-x86_64-Ubuntu-24.04.4-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=MAIN
+OUT_DIR=out
+SOONG_ONLY=false
+============================================
+[ 11% 16/141] //external/dtc:dtc gen yacc [linux_glibc]
+external/dtc/dtc-parser.y: warning: 5 shift/reduce conflicts [-Wconflicts-sr]
+external/dtc/dtc-parser.y: note: rerun with option '-Wcounterexamples' to generate conflict counterexamples
+[ 69% 98/141] //external/avb/rust:libavb_bindgen_nostd bindgen bindgen/avb.h
+clang diag: external/avb/rust/bindgen/avb.h:17:9: warning: #pragma once in main file [-Wpragma-once-outside-header]
+[ 78% 111/141] //packages/modules/Virtualization/guest/pvmfw:pvmfw_fdt_template_rs generate lib.rs
+./out/soong/.intermediates/packages/modules/Virtualization/guest/pvmfw/pvmfw_platform.dts.preprocessed/android_arm64_armv8-a/pvmfw_platform.dts.preprocessed.o:14.9-17.4: Warning (unit_address_vs_reg): /memory: node has a reg or ranges property, but no unit name
+./out/soong/.intermediates/packages/modules/Virtualization/guest/pvmfw/pvmfw_platform.dts.preprocessed/android_arm64_armv8-a/pvmfw_platform.dts.preprocessed.o:22.36-27.5: Warning (unit_address_vs_reg): /reserved-memory/restricted_dma_reserved: node has a reg or ranges property, but no unit name
+./out/soong/.intermediates/packages/modules/Virtualization/guest/pvmfw/pvmfw_platform.dts.preprocessed/android_arm64_armv8-a/pvmfw_platform.dts.preprocessed.o:28.8-32.5: Warning (unit_address_vs_reg): /reserved-memory/dice: node has a reg or ranges property, but no unit name
+./out/soong/.intermediates/packages/modules/Virtualization/guest/pvmfw/pvmfw_platform.dts.preprocessed/android_arm64_armv8-a/pvmfw_platform.dts.preprocessed.o:235.13-242.4: Warning (unit_address_vs_reg): /intc: node has a reg or ranges property, but no unit name
+./out/soong/.intermediates/packages/modules/Virtualization/guest/pvmfw/pvmfw_platform.dts.preprocessed/android_arm64_armv8-a/pvmfw_platform.dts.preprocessed.o:279.6-327.4: Warning (unit_address_vs_reg): /pci: node has a reg or ranges property, but no unit name
+./out/soong/.intermediates/packages/modules/Virtualization/guest/pvmfw/pvmfw_platform.dts.preprocessed/android_arm64_armv8-a/pvmfw_platform.dts.preprocessed.o:328.15-332.4: Warning (unit_address_vs_reg): /pclk@3M: node has a unit name, but no reg or ranges property
+./out/soong/.intermediates/packages/modules/Virtualization/guest/pvmfw/pvmfw_platform.dts.preprocessed/android_arm64_armv8-a/pvmfw_platform.dts.preprocessed.o:348.10-351.4: Warning (unit_address_vs_reg): /cpufreq: node has a reg or ranges property, but no unit name
+./out/soong/.intermediates/packages/modules/Virtualization/guest/pvmfw/pvmfw_platform.dts.preprocessed/android_arm64_armv8-a/pvmfw_platform.dts.preprocessed.o:311.3-326.31: Warning (interrupt_map): /pci:interrupt-map-mask: property size (256) is invalid, expected 16
+[100% 141/141] Target vbmeta image: out/target/product/generic_arm64/vbmeta.img
+
+#### build completed successfully (22 seconds) ####
+
 liferlighdow@Lubuntu:~/android17$
