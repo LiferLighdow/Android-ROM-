@@ -33,4 +33,10 @@ SOONG_ONLY=false
               local development when not doing performance testing.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+liferlighdow@Lubuntu:~/android17$ m systemimage -j8
+
+[100% 133140/133140] Install system fs image: out/target/product/generic_arm64/system.img
+
+#### build completed successfully (02:37:29 (hh:mm:ss)) ####
+
 liferlighdow@Lubuntu:~/android17$
